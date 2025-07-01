@@ -95,3 +95,17 @@ num difoftwo(num num1, num num2) {
 //   String reversedstring = input.split('').reversed.join('');
 //   return reversedstring;
 // }
+
+// ------named parameter(argument)--------
+
+// 1 optional---------
+
+// void numbers({int? a, int? b, int? c}) {
+//   print(a);
+//   print(b);
+//   print(c);
+// }
+
+// void main() {
+//   numbers(c: 3); //pass an argument without an order
+// }
