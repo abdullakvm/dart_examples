@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  // ---------mul table----------
+  // ---------mul table---------
 
   // stdout.write("enter a number :");
   // int? number = int.parse(stdin.readLineSync()!);
