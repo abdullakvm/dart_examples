@@ -23,27 +23,27 @@ import 'dart:io';
 // types
 //  1 - function without argument and return type
 
-void sum() {
-  print("sum of 1 and 2 is ${1 + 2}");
-}
+// void sum() {
+//   print("sum of 1 and 2 is ${1 + 2}");
+// }
 
 // 2 - function with return value and without argument
 
-String man() {
-  return "abd";
-}
+// String man() {
+//   return "abd";
+// }
 
 // 3 - function with out return type and with argument
 
-void sumoftwo(num number1, num number2) {
-  print("sum of $number1 and $number2 is ${number1 + number2}");
-}
+// void sumoftwo(num number1, num number2) {
+//   print("sum of $number1 and $number2 is ${number1 + number2}");
+// }
 
 // 4 - with return value and with argument
 
-num difoftwo(num num1, num num2) {
-  return num1 - num2;
-}
+// num difoftwo(num num1, num num2) {
+//   return num1 - num2;
+// }
 
 //------- write a function to get your name as user input and print your name
 
@@ -96,6 +96,44 @@ num difoftwo(num num1, num num2) {
 //   return reversedstring;
 // }
 
+// calculator using multiple functions----------
+
+// void addition(num num1, num num2) {
+//   stdout.write("$num1 + $num2 = ${num1 + num2}");
+// }
+
+// void substraction(num num1, num num2) {
+//   stdout.write("$num1 - $num2 = ${num1 - num2}");
+// }
+
+// void multiplication(num num1, num num2) {
+//   stdout.write("$num1 * $num2 = ${num1 * num2}");
+// }
+
+// void division(num num1, num num2) {
+//   stdout.write("$num1 / $num2 = ${num1 / num2}");
+// }
+
+// void main() {
+//   stdout.write("Enter first number :");
+//   num? number1 = num.tryParse(stdin.readLineSync()!)??0;
+//   stdout.write("Enter second number :");
+//   num? number2 = num.tryParse(stdin.readLineSync()!)??0;
+//   stdout.write("Choose a operator (+ , - , * , / ) :");
+//   String operator = stdin.readLineSync()!;
+//   if (operator == "+") {
+//     addition(number1, number2);
+//   } else if (operator == "-") {
+//     substraction(number1, number2);
+//   } else if (operator == "*") {
+//     multiplication(number1, number2);
+//   } else if (operator == "/") {
+//     division(number1, number2);
+//   } else {
+//     print("please choose a valid operator");
+//   }
+// }
+
 // ------named parameter(argument)--------
 
 // 1 optional---------
@@ -108,4 +146,110 @@ num difoftwo(num num1, num num2) {
 
 // void main() {
 //   numbers(c: 3); //pass an argument without an order
+// }
+
+// 1.2 defualt parameter--------
+
+// void numbers({int? a, int? b, int? c = 10}) {
+//   //we can assign a value to c
+//   // it will be default value as 10 or nullable we can change the value in the main function at the time of calling
+//   print(a);
+//   print(b);
+//   print(c);
+// }
+
+// void main() {
+//   numbers(c: 3, a: 10);
+// }
+
+// 2 required parameter-----------
+
+// void numbers({int? a, required int? b, int? c}) {
+//   //in this the b should be provided mustly
+//   print(a);
+//   print(b);
+//   print(c);
+// }
+
+// void main() {
+//   numbers(b: 4);
+// }
+
+// 1.3 positional + named parameter----------
+// combination of both
+
+// void numbers(String name, {int? a, required int? b, int? c}) {
+//   print(a);
+//   print(b);
+//   print(c);
+// }
+
+// void main() {
+//   numbers("abd", b: 10);
+// }
+
+// --------LAMBDA function or ARROW function--------
+
+// for executing single statement
+
+// String pname(String name) {
+//   return name;
+// }
+
+// String oname(String name) => name;// both are same
+
+// -----RECURSION (FUNCTION CALLING ITSELF)---------
+
+// void main() {
+//   name();
+// }
+
+// void name() {
+//   print("hai");
+//   name();
+// }
+// // this function is not exit
+
+// -------print 1 to 10 using recursion
+
+// void numbr(int count) {
+//   print(count);
+
+//   count++;
+//   if (count <= 10) {
+//     numbr(count);
+//   }
+// }
+
+// void main() {
+//   numbr(1);
+// }
+
+// ----------FUTURE FUNCTION---------
+
+// Future <void> abd() async{} //syntax
+// void main() {
+//   abd();
+// }
+
+// Future<void> abd() async { // assync used for assinchronous programming so no wait is there
+//   print("hai");
+//  await Future.delayed(Duration(seconds: 3));
+// //  await used for waiting for that delay
+//   print("helloo");
+// }
+
+// print 1 to 10 with 1 second delay------------
+// void main() {
+//   timer(1);
+// }
+
+// Future<void> timer(int count) async {
+//   if (count <= 10) {
+//     await Future.delayed(Duration(seconds: 1));
+//     print(count);
+
+//     count++;
+//     timer(count);
+//   }
 // }
