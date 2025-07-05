@@ -253,3 +253,45 @@ import 'dart:io';
 //     timer(count);
 //   }
 // }
+
+//------------passing function as argument------------
+
+// passing a function as argument of another function
+
+// void main() {
+//   fun(() {
+//     print("abd");
+//   });
+// }
+
+// void fun(void Function() secfun) {
+//   secfun();
+// }
+// =======================
+
+// void main() {
+//   fun(funname: random);
+// }
+
+// void fun({required void Function() funname, int? a, int b = 10}) {
+//   funname();
+//   print(a);
+//   print(b);
+// }
+
+// void random() {
+//   print("random");
+// }
+// ===================================
+
+void main() {
+  fun(
+    calculation: (num1, num2) {
+      print(num1 + num2);
+    },
+  );
+}
+
+void fun({required void Function(int a, int b) calculation}) {
+  calculation(12, 23);
+}
