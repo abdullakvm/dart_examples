@@ -284,14 +284,101 @@ import 'dart:io';
 // }
 // ===================================
 
-void main() {
-  fun(
-    calculation: (num1, num2) {
-      print(num1 + num2);
-    },
-  );
-}
+// void main() {
+//   fun(
+//     calculation: (num1, num2) {
+//       print(num1 + num2);
+//     },
+//   );
+// }
 
-void fun({required void Function(int a, int b) calculation}) {
-  calculation(12, 23);
-}
+// void fun({required void Function(int a, int b) calculation}) {
+//   calculation(12, 23);
+// }
+
+//------------------------------------------------------------
+// DART TEST
+// -----------------------------------------------------------
+
+// write a dart progarm declare a map with some key value pairs
+// void main() {
+//   Map abd = {"name": "john", "age ": "30 ", "is student": "false"};
+//   print(abd["name"]);
+//   print(abd["age"]);
+//   print(abd["is student"]);
+// }
+
+// print all even numbers from 1 to 20 using for loop
+
+// void main() {
+//   for (int i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//       print(i);
+//     }
+//   }
+// }
+
+// using for loop calcute the sum of all numbers in the list and print it [10,20,30,40,50]
+
+// void main() {
+//   int value = 50;
+//   int sum = 0;
+//   List valuse = [];
+//   for (int i = 1; i <= value; i++) {
+//     if (i % 10 == 0) {
+//       valuse.add(i);
+//       sum += i;
+//     }
+//   }
+//   print(valuse);
+//   print("sum of the numbers are $sum ");
+// }
+
+// the number is divisible by 3 print fizz by 5 print buzz both print fizzbuzz otherwise print the number
+
+// void main() {
+//   stdout.write("Enter the number :");
+//   int? number = int.tryParse(stdin.readLineSync()!);
+
+//   if (number! % 3 == 0 && number % 5 == 0) {
+//     print("fizzbuzz");
+//   } else if (number % 3 == 0) {
+//     print("fizz");
+//   } else if (number % 5 == 0) {
+//     print("buzz");
+//   } else {
+//     print(number);
+//   }
+// }
+
+// a fun that takes list as argument and print the graetest numbet in that list
+
+// void main() {
+//   fun(abd: [1, 23, 3]);
+// }
+
+// dynamic fun({required List<int> abd}) {
+//   print(abd);
+//   abd.sort();
+//   int largest = abd.last;
+//   print(largest);
+//   return abd;
+// }
+
+// pattern printing
+// 1
+// 22
+// 333
+// 4444
+
+// void main() {
+//   int number = 5;
+//   for (int j = 1; j <= number; j++) {
+//     for (int i = 1; i <= number; i++) {
+//       if (i <= j) {
+//         stdout.write(j);
+//       }
+//     }
+//     print("");
+//   }
+// }
