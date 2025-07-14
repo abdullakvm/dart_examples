@@ -305,24 +305,40 @@ void main() {
   //   print(space + star);
   // }
 
-// ----------pattern......
-//  * * * * * *
-//  * * * * *
-//  * * * *
-//  * * *
-//  * *
-//  *
-  stdout.write("enter a number :");
-  int? number = int.parse(stdin.readLineSync()!);
+  // ----------pattern......
+  //  * * * * * *
+  //  * * * * *
+  //  * * * *
+  //  * * *
+  //  * *
+  //  *
+  //   stdout.write("enter a number :");
+  //   int? number = int.parse(stdin.readLineSync()!);
 
-  for (int j = 1; j <= number; j++) {
-    for (int i = 1; i <= number; i++) {
-      if (i <= (number - j + 1)) {
-        stdout.write(" *");
-      } else {
-        stdout.write("  ");
-      }
-    }
-    print("");
+  //   for (int j = 1; j <= number; j++) {
+  //     for (int i = 1; i <= number; i++) {
+  //       if (i <= (number - j + 1)) {
+  //         stdout.write(" *");
+  //       } else {
+  //         stdout.write("  ");
+  //       }
+  //     }
+  //     print("");
+  //   }
+
+  // --------------WHILE LOOP----------/ Entry controlled loop
+
+  int a = 10;
+  while (a < 15) {
+    print("hellooo");
+    a++;
   }
+
+  // ----------------DO WHILE LOOP--------------
+
+  int b = 10;
+  do {
+    print(b);
+    b++;
+  } while (b < 20);
 }
