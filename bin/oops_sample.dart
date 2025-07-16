@@ -97,34 +97,52 @@
 
 //  remove unwanted assign methods using "this" keyword-------------
 
-class Person {
-  String name;
-  int age;
-  String gender;
-  int? ph; //it is optional
-  Person({
-    required  this.name,
-    required  this.gender,
-    required  this.age,
-    this.ph,
-  });
+// class Person {
+//   String name;
+//   int age;
+//   String gender;
+//   int? ph; //it is optional
+//   Person({
+//     required  this.name,
+//     required  this.gender,
+//     required  this.age,
+//     this.ph,
+//   });
 
-  void dtprint() {
-    if (ph != null) {
-      print(
-        "HI my name is $name i am $age years old and iam a $gender person my ph is $ph ",
-      );
-    } else {
-      print(
-        "HI my name is $name i am $age years old and iam a $gender person ",
-      );
-    }
+//   void dtprint() {
+//     if (ph != null) {
+//       print(
+//         "HI my name is $name i am $age years old and iam a $gender person my ph is $ph ",
+//       );
+//     } else {
+//       print(
+//         "HI my name is $name i am $age years old and iam a $gender person ",
+//       );
+//     }
+//   }
+// }
+
+// void main() {
+//   Person p1 = Person(name: "abd", gender: "male", age: 16);
+//   Person p2 = Person(name: "sam", gender: "male", age: 30, ph: 2344566789);
+//   p1.dtprint();
+//   p2.dtprint();
+// }
+
+// -----------model examples-----------
+
+class Mobile {
+  String brandname;
+  String model;
+  int price;
+  Mobile({required this.brandname, required this.model, required this.price});
+
+  void displaydetails() {
+    print("phone is $brandname,model $model ,prise $price");
   }
 }
 
 void main() {
-  Person p1 = Person(name: "abd", gender: "male", age: 16);
-  Person p2 = Person(name: "sam", gender: "male", age: 30, ph: 2344566789);
-  p1.dtprint();
-  p2.dtprint();
+  Mobile samsung = Mobile(brandname: "samsung", model: "S23", price: 59999);
+  samsung.displaydetails();
 }
