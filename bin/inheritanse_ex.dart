@@ -83,19 +83,102 @@
 
 //---------------------  super keyword used for accesing parent class properties
 
-class Vehicle {
-  int? speed;
-  String? colour;
-}
+// class Vehicle {
+//   int? speed;
+//   String? colour;
+// }
 
-class Car extends Vehicle {
-  Car(String colour1) {
-    super.colour = colour1; // assign colour1 to the inherited colour variable
-  }
-}
+// class Car extends Vehicle {
+//   Car(String colour1) {
+//     super.colour = colour1; // assign colour1 to the inherited colour variable
+//   }
+// }
 
-void main() {
-  Car obj = Car("blue");
+// void main() {
+//   Car obj = Car("blue");
 
-  print(obj.colour); // prints: blue
-}
+//   print(obj.colour); // prints: blue
+// }
+
+// ==============super keyword detailed using fn==========
+
+// class A {
+//   printa() {
+//     print("prints for a");
+//   }
+// }
+
+// class B extends A {
+//   printa() {
+//     super.printa();
+//     print("prints for b");
+//   }
+// }
+
+// void main() {
+//   B b1 = B();
+//   b1.printa();
+// }
+
+// ====== super keyword in the case of constructor========
+
+// class Student {
+//   String name;
+//   Student({required this.name}) {
+//     print(name);
+//   }
+// }
+
+// class Person extends Student {
+//   Person({required super.name}); // once we set argument on super class as required or positional the child class should provide that arguments too not must in optional
+// }
+
+// void main() {
+//   Person p1 = Person(name: "abd");
+// }
+
+// ex for that==========
+
+// class Person {
+//   String name;
+//   Person(this.name);
+// }
+
+// class Student extends Person {
+//   int grade;
+//   Student(super.name, this.grade) {
+//     print(name);
+//     print(grade);
+//   }
+// }
+
+// void main() {
+//   Student std1 = Student("abd", 78);
+// }
+
+// ------------inharitance examples----------
+
+// class Device {
+//   start() {
+//     print("device is starting");
+//   }
+// }
+
+// class Computer extends Device {
+//   compute() {
+//     print("computer is starting");
+//   }
+// }
+
+// class Laptop extends Computer {
+//   portable() {
+//     print("laptop is portable");
+//   }
+// }
+
+// void main() {
+//   Laptop l1 = Laptop();
+//   l1.start();
+//   l1.compute();
+//   l1.portable();
+// }
