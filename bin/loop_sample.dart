@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+// void main() {
   // ---------mul table---------
 
   // stdout.write("enter a number :");
@@ -328,17 +328,17 @@ void main() {
 
   // --------------WHILE LOOP----------/ Entry controlled loop
 
-  int a = 10;
-  while (a < 15) {
-    print("hellooo");
-    a++;
-  }
+  // int a = 10;
+  // while (a < 15) {
+  //   print("hellooo");
+  //   a++;
+  // }
 
   // ----------------DO WHILE LOOP--------------
 
-  int b = 10;
-  do {
-    print(b);
-    b++;
-  } while (b < 20);
-}
+//   int b = 10;
+//   do {
+//     print(b);
+//     b++;
+//   } while (b < 20);
+// }
