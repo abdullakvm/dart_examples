@@ -17,57 +17,57 @@
 
 // some examples======================
 
-abstract class Shape {
-  void getarea();
-  void getperimeter();
-  void displayinfo() {}
-}
+// abstract class Shape {
+//   void getarea();
+//   void getperimeter();
+//   void displayinfo() {}
+// }
 
-class Circle extends Shape {
-  int radius;
-  Circle(this.radius);
+// class Circle extends Shape {
+//   int radius;
+//   Circle(this.radius);
 
-  @override
-  void getarea() {
-    print("area of circle = ${(radius * radius) * 3.14}");
-  }
+//   @override
+//   void getarea() {
+//     print("area of circle = ${(radius * radius) * 3.14}");
+//   }
 
-  @override
-  void getperimeter() {
-    print("perimeter of circle = ${(2 * 3.14) * radius}");
-  }
+//   @override
+//   void getperimeter() {
+//     print("perimeter of circle = ${(2 * 3.14) * radius}");
+//   }
 
-  @override
-  void displayinfo() {
-    getarea();
-    getperimeter();
-  }
-}
+//   @override
+//   void displayinfo() {
+//     getarea();
+//     getperimeter();
+//   }
+// }
 
-class REctangle extends Shape {
-  int length;
-  int width;
-  REctangle(this.length, this.width);
-  @override
-  void getarea() {
-    print("area of rectangle is = ${width * length}");
-  }
+// class REctangle extends Shape {
+//   int length;
+//   int width;
+//   REctangle(this.length, this.width);
+//   @override
+//   void getarea() {
+//     print("area of rectangle is = ${width * length}");
+//   }
 
-  @override
-  void getperimeter() {
-    print("perimeter of rectangle is = ${2 * (width + length)}");
-  }
+//   @override
+//   void getperimeter() {
+//     print("perimeter of rectangle is = ${2 * (width + length)}");
+//   }
 
-  @override
-  void displayinfo() {
-    getperimeter();
-    getarea();
-  }
-}
+//   @override
+//   void displayinfo() {
+//     getperimeter();
+//     getarea();
+//   }
+// }
 
-void main() {
-  Circle c1 = Circle(10);
-  c1.displayinfo();
-  REctangle r1 = REctangle(10, 5);
-  r1.displayinfo();
-}
+// void main() {
+//   Circle c1 = Circle(10);
+//   c1.displayinfo();
+//   REctangle r1 = REctangle(10, 5);
+//   r1.displayinfo();
+// }
